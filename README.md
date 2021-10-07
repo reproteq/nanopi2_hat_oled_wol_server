@@ -9,17 +9,21 @@
 
 # NANOPI NEO2 v1.1 1711 H5 QUADCORE
 
+https://www.armbian.com/nanopi-neo-2/
+
 http://download.friendlyarm.com/nanopineo2
 
-https://www.armbian.com/nanopi-neo-2/
 
 Armbian_21.08.1_Nanopineo2_focal_current_5.10.60.img.xz
 
 root login >  user=root pass=1234
 
-tras el primer login cambiar el pass y si quieres crear otro usuario
+* tras el primer login cambiar el pass y si quieres crear otro usuario
+
 
 ## instalar hat oled nano pi neo2
+
+apt-get install git
 
 git clone --depth=1 https://github.com/friendlyarm/NanoHatOLED.git
  
@@ -33,34 +37,19 @@ configurar idioma i zona horaria
 
 Seleccione Opciones de interfaz-> I2C elija y presione Entrar, luego vaya a Finalizar y reinicie.
 
+* si todo fue bien ya se encendera el hat oled y veras el script /usr/local/bin/oled-start con cat /etc/rc.local 
+
 
 ## instalar wakeserver
 
-sudo apt-get install nginx php php-cli php-fpm php-json php-common php-mysql php-zip php-gd php-mbstring php-curl php-xml php-pear php-bcmath 
+sudo apt-get install wakeonlan nginx php php-cli php-fpm php-json php-common php-mysql php-zip php-gd php-mbstring php-curl php-xml php-pear php-bcmath 
 
-copiar folder  wakeserver en www y sites-enabled en nginx  wakeserver.conf
+copiar folder  wakeserver en www y en nginx  sites-enabled  wakeserver.conf para el proxy
 
 chown -R www-data:www-data /var/www/wakeserver
 
-sudo apt-get install wakeonlan
+* si todo fue bien ya podras navegar hasta la ip y ver el server , no olvides abrir puertos en router y asignar ip fija tambien puedes configurar dns dinamico
 
-* si todo fue bien ya se encendera el hat oled y en la ruta de abajo el script python ya estara
-
-cat /etc/rc.local
-
-#!/bin/sh -e
-
-/usr/local/bin/oled-start
-
-exit 0
-
-root@nanopineo2:/usr/local/bin# cat oled-start
-
-#!/bin/sh
-
-cd /root/NanoHatOLED
-
-./NanoHatOLED
 
 ## fail2ban 
 
@@ -91,6 +80,7 @@ fail2ban-client status sshd
 fail2ban-client status wakeserver
 
 service fail2ban status
+
 
 ## firewall
 
