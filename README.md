@@ -1,12 +1,3 @@
-# nanopi2_hat_oled_wol_server
-
-
-![alt tag](https://github.com/reproteq/nanopi2_hat_oled_wol_server/blob/main/wake.png)
-
-
-![alt tag](https://github.com/reproteq/nanopi2_hat_oled_wol_server/blob/main/nanopi2-wol-server.png)
-
-
 # NANOPI NEO2 v1.1 1711 H5 QUADCORE
 
 https://www.armbian.com/nanopi-neo-2/
@@ -91,3 +82,10 @@ sudo ufw status
 ufw allow http, https, ssh, portwakeserver
 
 ufw enable
+
+
+
+![alt tag](https://github.com/reproteq/nanopi2_hat_oled_wol_server/blob/main/wake.png)
+
+
+![alt tag](https://github.com/reproteq/nanopi2_hat_oled_wol_server/blob/main/nanopi2-wol-server.png)
