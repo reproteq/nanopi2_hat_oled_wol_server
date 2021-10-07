@@ -44,11 +44,11 @@ Seleccione Opciones de interfaz-> I2C elija y presione Entrar, luego vaya a Fina
 
 sudo apt-get install wakeonlan nginx php php-cli php-fpm php-json php-common php-mysql php-zip php-gd php-mbstring php-curl php-xml php-pear php-bcmath 
 
-copiar folder  wakeserver en www y en nginx  sites-enabled  wakeserver.conf para el proxy
+copiar folder  wakeserver en /var/www/  editar index.php y config.php con user, pass, ip, mac  y en nginx  sites-enabled  wakeserver.conf para el proxy
 
 chown -R www-data:www-data /var/www/wakeserver
 
-* si todo fue bien ya podras navegar hasta la ip y ver el server , no olvides abrir puertos en router y asignar ip fija tambien puedes configurar dns dinamico
+* si todo fue bien ya podras navegar hasta la ip y ver el server , no olvides abrir puertos del router y asignar ip fija para cada mac de las maquinas de la res y del server nanopi y  tambien puedes configurar dns dinamico para acceder desde fuera de tu red local.
 
 
 ## fail2ban 
