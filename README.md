@@ -84,7 +84,6 @@ ufw allow http, https, ssh, portwakeserver
 ufw enable
 
 
-
 ![alt tag](https://github.com/reproteq/nanopi2_hat_oled_wol_server/blob/main/wake.png)
 
 
