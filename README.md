@@ -36,9 +36,9 @@ Seleccione Opciones de interfaz-> I2C elija y presione Entrar, luego vaya a Fina
 
 ## instalar wakeserver
 
-sudo apt install php php-cli php-fpm php-json php-common php-mysql php-zip php-gd php-mbstring php-curl php-xml php-pear php-bcmath
+sudo apt-get install nginx php php-cli php-fpm php-json php-common php-mysql php-zip php-gd php-mbstring php-curl php-xml php-pear php-bcmath 
 
-copiar folder con scripts php para el  wakeserver en www y config en nginx  wakeserver.conf
+copiar folder  wakeserver en www y sites-enabled en nginx  wakeserver.conf
 
 chown -R www-data:www-data /var/www/wakeserver
 
