@@ -48,7 +48,7 @@ copiar folder  wakeserver en /var/www/  editar index.php y config.php con user, 
 
 chown -R www-data:www-data /var/www/wakeserver
 
-* si todo fue bien ya podras navegar hasta la ip y ver el server , no olvides abrir puertos del router y asignar ip fija para cada mac de las maquinas de la res y del server nanopi y  tambien puedes configurar dns dinamico para acceder desde fuera de tu red local.
+* si todo fue bien ya podras navegar hasta la ip y ver el server , no olvides abrir puertos del router y asignar ip fija para cada mac de las maquinas de la red y del server nanopi y  tambien puedes configurar dns dinamico para acceder desde fuera de tu red local.
 
 
 ## fail2ban 
