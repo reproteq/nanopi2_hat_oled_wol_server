@@ -1,5 +1,8 @@
 # NANOPI NEO2 v1.1 1711 H5 QUADCORE
 
+Wake on Lan/Wan, es una tecnología mediante la cual podemos encender un ordenador de manera remota, simplemente mediante una llamada de software. Puede implementarse tanto en redes locales (LAN), como en redes de área extensa (WAN o Internet)
+
+
 https://www.armbian.com/nanopi-neo-2/
 
 http://download.friendlyarm.com/nanopineo2
